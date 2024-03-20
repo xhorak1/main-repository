@@ -1,0 +1,34 @@
+#Two lists of integers are filled with random numbers. Do the following:
+list1 = [1, 2, 4, 3, 5, -6, -2, 2, -3, 8]
+list2 = [2, -3, 5, 8, 9, -8, 5, 1, 4, -4]
+#■ Create the third list containing elements of both lists;
+list3 = list1 + list2
+print(list3)
+#■ Create the third list containing elements of both lists without repetitions;
+list4 = list3
+list4 = list(set(list4))
+print(list4)
+#■ Create the third list containing elements common to both lists;
+list5 = list3
+list5=list(set([i for i in list3 if list3.count(i) > 1]))
+print(list5)
+#■ Create the third list containing elements that are unique to each list;
+list6 = list3
+unique = []
+for i in list6:
+  if list6.count(i) == 1:
+    unique.append(i)
+print(unique)
+#■ Create the third list containing only the smallest and the largest values of each list
+list7 = list3
+smallest = 0
+largest = 0
+for i in range(len(list7)):
+  if list7[i] < list7[smallest]:
+    smallest = i
+
+  if list7[i] > list7[largest]:
+    largest = i
+
+maxmin_list = [list7[smallest] , list7[largest]]
+print(maxmin_list)
