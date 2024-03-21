@@ -1,7 +1,7 @@
 """Task 1
 There are four lists of integers. Combine them in the
 fifth list. Sort the result in ascending or descending order based on the user’s choice. Find a value entered by the user using a linear search."""
-"""list1 = [1, 2, 3]
+list1 = [1, 2, 3]
 list2 = [3, 4, 3]
 list3 = [2, 6, 8]
 list4 = [4, 5, 8]
@@ -21,7 +21,7 @@ key = int(input("Zadej hledané číslo: "))
 if key in list5:
   print(key)
 else:
-  print("Není v seznamu.")"""
+  print("Není v seznamu.")
 
 #Task 2
 #There are four lists of integers. Combine only the elements unique to each list in the fifth list. Sort the result in ascending or descending order based on the user’s choice. Find a value entered by the user using a binary search.
